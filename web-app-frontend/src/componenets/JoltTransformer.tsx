@@ -193,14 +193,12 @@ export const JoltTransformer = () => {
         </Nav>
       </Row>
       {errorMessage && (
-        <Row>
-          <Row className="mt-3">
-            <Col>
-              <Alert variant={'danger'} role="alert">
-                {errorMessage}
-              </Alert>
-            </Col>
-          </Row>
+        <Row className="mt-3">
+          <Col>
+            <Alert variant={'danger'} role="alert" dismissible onClose={() => setErrorMessage('')}>
+              {errorMessage}
+            </Alert>
+          </Col>
         </Row>
       )}
       <Row>
