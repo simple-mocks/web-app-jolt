@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'hugeicons-react'
 import { JoltTransformer } from './componenets';
 
 import 'ace-builds/src-noconflict/mode-json';
